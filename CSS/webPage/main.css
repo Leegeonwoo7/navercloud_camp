@@ -1,0 +1,271 @@
+@import "reset.css";
+
+body{
+    height: 500vh;
+}
+
+
+hr{
+    display: none;   
+}
+
+
+.blind, legend{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: -1000em;
+}
+
+
+.skip a{
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: -1000em;
+    z-index: 9999;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    font: bold 1.3em Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.skip a:hover, .skip a:active, .skip a:focus{
+    top: 0;
+    padding: 0.5em 0;
+}
+
+
+#wrap{
+    width: 760px;
+    margin: 0 auto;
+}
+
+
+.snb{
+    float: left;
+    width: 170px;
+}
+
+#content{
+    position: relative;
+    float: right;
+    width: 560px;
+}
+
+#content h2{
+    padding: 24px 0;
+    color: #005B9B;
+    font-family: var(--font-style);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#content .thum{
+    float:left;
+    margin-left: 14px;
+}
+
+#content .text{
+    margin-left: 148px;
+}
+
+#content .text p{
+    margin-bottom:  15px;
+    line-height: 1.15;
+}
+
+#content .thum img{
+    width: 114px;
+    height: 111px;
+    border: 1px solid --color-line;
+}
+
+
+
+#container{
+    background: url("bg_snb.png") repeat-y 170px 0;
+}
+
+#container::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+
+
+#header{
+    position: relative;
+    padding-bottom: 99px;
+    background: url("bg_header.png") no-repeat 50% 100%;
+    border-bottom: 1px solid --color-line;
+    
+    
+    margin-bottom: 15px;
+}
+
+.topnav{
+    right: 35px;
+    top: 18px;
+    position: absolute;
+}
+
+.topnav dd {
+    float: left;
+    padding-right: 11px;
+    margin-right: 10px;
+    background: url("bg_topnav.png") no-repeat 100% 50%;
+}
+
+.topnav dd:last-child{
+    padding-right: 0;
+    margin-right: 0;
+    background: none;
+}
+
+.topnav dd a{
+    color: black;
+    font-size: 0.9em;
+}
+
+.logo{
+    padding: 12px 0 12px 26px;
+}
+
+.logo a{
+    display: block;
+    overflow: hidden;
+    width: 90px;
+    height: 30px;
+    background: url("logo.png");
+}
+
+
+.mainnav{
+    padding-left: 50px;
+    background-color: #005B98;
+}
+
+.mainnav li{
+    float: left;
+}
+
+.mainnav li a{
+    display: block;
+    padding: 0 13px;
+    background-color: #005B9B;
+    color: #ffffff;
+    font: bold 16px/40px 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.mainnav li a:hover{
+    color: rgb(115, 115, 115);
+}
+
+.mainnav:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+
+.snb h2{
+    padding: 28px 14px 8px 0;
+    margin-left: 11px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    color: #005B98;
+    font-family: var(--font-style);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.snb ul{
+    margin-left: 11px;
+}
+
+.snb ul a{
+    display: block;
+    padding-right: 14px;
+    color: #005B9B;
+    font-family: var(--font-style);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    line-height: 30px;
+
+}
+
+.snb ul a:hover{
+    text-decoration: underline;
+}
+
+.locate{
+    position: absolute;
+    right: 28px;
+    top: 26px;
+    color: #ccc;
+    font-size:0.9em;
+    word-spacing: 0.3em;
+}
+
+.locate a{
+    color: #666666;
+    text-decoration: none;
+    opacity: 0.75;
+    font-size: 12px;
+}
+
+#footer{
+    border-top: 1px solid var(--color-line);
+    padding: 18px 30px 40px 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+#footer:after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+.btmnav{
+    float: right;
+}
+
+.btmnav dd {
+    float: left;
+    padding-right: 11px;
+    margin-right: 10px;
+    background: url("bg_topnav.png") no-repeat 100% 50%;
+}
+
+.btmnav dd a{
+    opacity: 0.5;
+}
+
+.btmnav dd a:hover{
+    color: blue;
+}
+
+.btmnav dd:last-child{
+    padding-right: 0;
+    margin-right: 0;
+    background: none;
+}
+
+
+
+
+
