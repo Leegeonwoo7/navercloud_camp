@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .add_button{
+            position: fixed;
+        }
+
+        .del_button{
+            position: fixed;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<input class="add_button" type="button" value="추가">
+<input class="del_button" type="button" value="삭제">
+
+<!-- 동적 요소 -->
+<ul></ul>
+
+<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(function (){
+        let i=1;
+
+        $('input:eq(0)').click(function (){
+            let li1 = $('<li>').css('color', 'red').html('추가항목' + (i++));
+            let li2 = $('<li>').css('color', 'green').html('추가항목' + (i++));
+            let li3 = $('<li>').css('color', 'blue').html('추가항목' + (i++));
+
+            $('ul').append(li1);
+            $('ul').append(li2);
+            $('ul').append(li3);
+        });
+
+        $('input:eq(1)').click(function (){
+           $('ul').empty();
+           i=1;
+        });
+    })
+</script>
+</body>
+<!--
+ A.append(B) => A에다가 B를 추가한다
+  -->
+
+</html>
